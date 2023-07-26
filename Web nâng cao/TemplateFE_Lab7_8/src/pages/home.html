@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3" ng-repeat="item in sinhViens">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Mã sinh viên: {{item.maSV}}</h5>
+          <p class="card-text">Tên: {{item.ten}}</p>
+          <p class="card-text">Cân nặng: {{item.canNang}}</p>
+          <p class="card-text">Loại: {{item.loai}}</p>
+          <p class="card-text">
+            Giới tính: {{item.gioiTinh == true ? "Nam": "Nữ"}}
+          </p>
+          <p class="card-text">Chuyên ngành: {{item.chuyenNganh}}</p>
+          <p class="card-text">Sở thích: {{item.soThich}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

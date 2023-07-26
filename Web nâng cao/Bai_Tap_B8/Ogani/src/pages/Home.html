@@ -1,0 +1,96 @@
+<!-- Sẽ là trang mặc định đầu tiên -->
+<div class="container">
+    <!-- Slide show -->
+    <div class="image">
+        <img id="img" onclick="
+        changeImage()" src="/Ogani/assets/sr-1.jpg" alt="">
+    </div>
+    <div class="Article">
+        <h1>Featured Product</h1>
+        <hr width="80%">
+        <br>
+        <!-- Chia theo SPA cho web + dùng angular js cho phần card  
+        xây dựng một card duy nhất-->
+        <div class="row">
+            <div class="col-3" ng-repeat="haha in listHoaQua">
+                <div class="card">
+                    <!-- Gán giá trị ảnh  -->
+                    
+                    <img src="/Ogani/assets/featured/{{haha.image}}" alt="...">
+                
+                </div>
+                <br>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="#/HOME/hoaQua-Detail-Controller/{{haha.id}}">{{haha.name}}</a></h5>
+                <br>
+                <div class="gia" style="text-align: center;">
+                    <p style="font-weight: bold;">${{haha.price}}</p>
+                </div>
+            </div>
+        </div>
+        <!-- DÙng card 4 -->
+        <div class="The_End">
+            <h1 style="text-align: center;">From The Blog</h1>
+            <hr width="80%">
+            <!-- Chia lại col cho bài -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <!-- Gán giá trị ảnh  -->
+                        <img src="/Ogani/assets/blog-1.jpg" alt="...">
+                    </div>
+                    <br>
+                    <div class="Icon">
+                        <img src="/Ogani/assets/calendar-date.svg" alt="">
+                        May 4,2019
+                        <img src="/Ogani/assets/chat.svg" alt="">
+                        6
+                        <div class="Comment">
+                            <h6>
+                                Cooking tips make cooking simple
+                                Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <!-- Gán giá trị ảnh  -->
+                        <img src="/Ogani/assets/blog-2.jpg" alt="...">
+                    </div>
+                    <br>
+                    <div class="Icon">
+                        <img src="/Ogani/assets/calendar-date.svg" alt="">
+                        May 4,2019
+                        <img src="/Ogani/assets/chat.svg" alt="">
+                        6
+                        <div class="Comment">
+                            <h6>
+                                Cooking tips make cooking simple
+                                Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <!-- Gán giá trị ảnh  -->
+                        <img src="/Ogani/assets/blog-3.jpg" alt="...">
+                    </div>
+                    <br>
+                    <div class="Icon">
+                        <img src="/Ogani/assets/calendar-date.svg" alt="">
+                        May 4,2019
+                        <img src="/Ogani/assets/chat.svg" alt="">
+                        6
+                        <div class="Comment">
+                            <h6>
+                                Cooking tips make cooking simple
+                                Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

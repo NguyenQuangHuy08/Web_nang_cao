@@ -1,0 +1,65 @@
+{
+  "thucVat": [
+    {
+      "ten": "ten 4",
+      "loai": "loai 4",
+      "gioiTinh": false,
+      "id": "ms4"
+    },
+    {
+      "ten": "ten 5",
+      "loai": "loai 5",
+      "gioiTinh": true,
+      "id": "ms5"
+    },
+    {
+      "ten": "ten 6",
+      "loai": "loai 6",
+      "gioiTinh": true,
+      "id": "6"
+    },
+    {
+      "ten": "ten 7",
+      "loai": "loai 7",
+      "gioiTinh": true,
+      "id": "7"
+    },
+    {
+      "ten": "ten 8",
+      "loai": "loai 8",
+      "gioiTinh": true,
+      "id": "8"
+    },
+    {
+      "ten": "ten 9",
+      "loai": "loai 9",
+      "gioiTinh": false,
+      "id": "9"
+    },
+    {
+      "ten": "ten 10",
+      "loai": "loai 10",
+      "gioiTinh": false,
+      "id": "10"
+    },
+    {
+      "ten": "ten 11",
+      "loai": "loai 11",
+      "gioiTinh": false,
+      "id": "11"
+    },
+    {
+      "ten": "ten 12",
+      "loai": "loai 12",
+      "gioiTinh": false,
+      "id": "12"
+    },
+    {
+      "ten": "ten 13",
+      "loai": "loai 13",
+      "gioiTinh": false,
+      "id": "13"
+    }
+    
+  ]
+}

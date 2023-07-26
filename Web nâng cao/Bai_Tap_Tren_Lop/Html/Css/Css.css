@@ -1,0 +1,33 @@
+body {
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+
+    max-width: 1200px;
+    margin: 0px auto;
+
+}
+
+input{
+
+    margin-right: 20px;
+
+}
+
+table{
+
+    width: 700px;
+}
+
+th, td{
+
+    padding: 20px;
+}
+.button{
+
+    margin-top: 12px;
+
+}

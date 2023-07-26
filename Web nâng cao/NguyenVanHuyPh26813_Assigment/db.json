@@ -1,0 +1,264 @@
+{
+  "listman": [
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 85,
+      "id": "1",
+      "image": "col4-1.jpg"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 85,
+      "id": "2",
+      "image": "col4-2.jpg"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 85,
+      "image": "col4-3.jpg",
+      "id": "3"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 85,
+      "image": "col4-4.jpg",
+      "id": "4"
+    }
+  ],
+  "listman2": [
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 85,
+      "id": "1",
+      "image": "col4-1.jpg"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 85,
+      "id": "2",
+      "image": "col4-2.jpg"
+    }
+  ],
+  "listwoman": [
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "model1.jpg"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "model2.jpg"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "model3.jpg"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "model4.jpg"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "model5.jpg"
+    }
+  ],
+  "listnew": [
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "image1.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "2",
+      "image": "image2.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "3",
+      "image": "image3.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "4",
+      "image": "image4.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "5",
+      "image": "image5.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "6",
+      "image": "image3.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "7",
+      "image": "image4.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "8",
+      "image": "image1.jfif"
+    }
+  ],
+  "listPages": [
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "image1.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "2",
+      "image": "image2.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "3",
+      "image": "image3.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "4",
+      "image": "image4.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "5",
+      "image": "image5.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "6",
+      "image": "image3.jfif"
+    },
+    {
+      "id": "8",
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "image": ""
+    }
+  ],
+  "listInformation": [
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "model1.jpg"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "model2.jpg"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "model3.jpg"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "model4.jpg"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "model5.jpg"
+    }
+  ],
+  "listBlogs": [
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "blog1.png"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "blog2.png"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "blog3.png"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "blog4.png"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "blog1.png"
+    }
+  ],
+  "listShop": [
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "shop1.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "shop2.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "shop3.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "shop4.jfif"
+    },
+    {
+      "name": "BERRY LACE DRESS",
+      "price": 100,
+      "id": "1",
+      "image": "shop5.jfif"
+    }
+  ]
+}

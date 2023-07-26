@@ -1,0 +1,113 @@
+<div class="container">
+
+    <center>
+        <h4>SINH VIÊN</h4>
+    </center>
+
+    <div class="col-12">
+        <form>
+            ID :
+            <input class="form-control" type="text" aria-label="default input example" ng-model="from_sinhVien.id" />
+            <br />
+            Tên :
+            <input class="form-control" type="text" aria-label="default input example" ng-model="from_sinhVien.ten" />
+            <br />
+            Cân nặng :
+            <input class="form-control" type="text" aria-label="default input example" ng-model="from_sinhVien.cannang" />
+            <br />
+            Giới tính :
+            <input type="radio" style="margin-left: 100px" name="gender" value="true" ng-model="from_sinhVien.gioitinh"
+                ng-checked="from_sinhVien.gioitinh == true" ng-click="check()" />
+            Nam
+            <input type="radio" name="gender" style="margin-left: 100px" value="false" ng-model="from_sinhVien.gioitinh"
+                ng-checked="from_sinhVien.gioitinh == false" ng-click="check()" />
+            Nữ
+            <br />
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Loại</label>
+                <div class="col-md-3">
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Loại 1</option>
+                        <option>Loại 2</option>
+                        <option>Loại 3</option>
+                        <option>Loại 4</option>
+                    </select>
+                </div>
+            </div>
+            <br />
+            Chuyên ngành :
+            <input type="radio" style="margin-left: 100px" name="chuyennganh" value="true"
+                ng-model="from_sinhVien.chuyennganh" ng-checked="from_sinhVien.chuyennganh == true"
+                ng-click="check()" />
+            UDPM
+            <input type="radio" name="chuyennganh" style="margin-left: 100px" value="false"
+                ng-model="from_sinhVien.chuyennganh" ng-checked="from_sinhVien.chuyennganh == false"
+                ng-click="check()" />
+            PTPM
+            <input type="radio" name="chuyennganh" style="margin-left: 100px" value="false"
+                ng-model="from_sinhVien.chuyennganh" ng-checked="from_sinhVien.chuyennganh == false"
+                ng-click="check()" />
+            Lập trình web
+            <input type="radio" name="chuyennganh" style="margin-left: 100px" value="false"
+                ng-model="from_sinhVien.chuyennganh" ng-checked="from_sinhVien.chuyennganh == false"
+                ng-click="check()" />
+            Lập trình mobile
+            <br />
+
+            Sở thích
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+                Ăn 
+            </label>
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+                Lăn 
+            </label>
+
+            <br />
+            <!--  -->
+            <a href="#SINH_VIEN/add" class="btn btn-success col-1 m-3" ng-click="addStudent($event);">
+                Thêm
+            </a>
+            <button type="button" class="btn btn-warning">Update</button>
+        </form>
+    </div>
+
+
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Tên</th>
+                <th scope="col">MaSV</th>
+                <th scope="col">Cân nặng</th>
+                <th scope="col">Giới tính</th>
+                <th scope="col">Loại</th>
+                <th scope="col">Chuyên ngành</th>
+                <th scope="col">Sở thích</th>
+                <th scope="col">Funtion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="haha in danhSach">
+                <td>{{haha.id}}</td>
+                <td>{{haha.ten}}</td>
+                <td>{{haha.maSV}}</td>
+                <td>{{haha.cannang}}</td>
+                <td>{{haha.gioitinh ? "Nam" : "Nữ"}}</td>
+                <td>{{haha.loai}}</td>
+                <td>{{haha.chuyennganh}}</td>
+                <td>{{haha.sothich}}</td>
+                <td>
+                    <a href="#SINH_VIEN/detail/{{haha.id}}" ng-click="detailStudent($event,$index)">Detail</a>
+                    <a href="#SINH_VIEN/remove/{{haha.id}}" ng-click="removeStudent($event,$index)">Remove</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>

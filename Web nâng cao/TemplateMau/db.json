@@ -1,0 +1,34 @@
+{
+  "listDongVat": [
+    {
+     "ma": "ma 1",
+     "cannang": "cannang 1",
+     "chieucao": "chieucao 1",
+     "id": "1"
+    },
+    {
+     "ma": "ma 2",
+     "cannang": "cannang 2",
+     "chieucao": "chieucao 2",
+     "id": "2"
+    },
+    {
+     "ma": "ma 3",
+     "cannang": "cannang 3",
+     "chieucao": "chieucao 3",
+     "id": "3"
+    },
+    {
+     "ma": "ma 4",
+     "cannang": "cannang 4",
+     "chieucao": "chieucao 4",
+     "id": "4"
+    },
+    {
+     "ma": "ma 5",
+     "cannang": "cannang 5",
+     "chieucao": "chieucao 5",
+     "id": "5"
+    }
+   ]
+}

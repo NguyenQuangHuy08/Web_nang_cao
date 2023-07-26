@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+    <link rel="stylesheet" href="Css/Css.css">
+</head>
+<body ng-app="bai4" ng-controller="myController">
+    <div class="container">
+        <h1 style="text-align: center;">THÔNG TIN CÁ NHÂN HỌC SINH</h1>
+        <br>
+        <br>
+        <div class="khung">
+            <table border="1" cellspacing="0">
+                <tr>
+                    <th scope="col">Họ và tên</th>
+                    <th scope="col">Ngày sinh</th>
+                    <th scope="col">Giới tính</th>
+                    <th scope="col">Điểm</th>
+                </tr>
+                <tr ng-repeat="item in mangSinhVien">
+                    <td>{{item.ten}}</td>
+                    <td>{{item.ngayThangNamSinh}}</td>
+                    <td>{{item.gioiTinh}}</td>
+                    <td>{{item.diem}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./lib/angular.min.js"></script>
+    <script src="Js/Js.js"></script>
+</body>
+
+</html>

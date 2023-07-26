@@ -1,0 +1,96 @@
+<br>
+<img class="image_woman" src="/assets/Image_Woman/slide show.jpg" alt="">
+<br>
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-6" ng-repeat="haha in danhSachWoman |limitTo: 2">
+                    <div class="card" style="width: 18rem;">
+                        <img class="image_woman" src="/assets/Image_Woman/{{haha.image}} " alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <img class="col6-1" src="/assets/Image_Woman/model3.jpg" alt="">
+            </div>
+            <br>
+            <img class="col6-1" src="/assets/Image_Man/col3-2.jpg" alt="">
+        </div>
+    </div>
+
+
+    <br>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Main</a>
+        </li>
+
+    </ul>
+
+    <br>
+    <br>
+
+    <center>
+        <h5 style="color: black;">Style Woman</h5>
+    </center>
+
+    <br>
+    <div class="row">
+        <div class="col-3" ng-repeat="haha in danhSachWoman |limitTo: 4">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/Image_Woman/{{haha.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" style="color: black;">{{haha.name}}</h5>
+                    </center>
+                    <p class="card-text">
+                    <div class="gia">
+                        <del>{{haha.price}}</del> {{haha.price}}
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                    </div>
+                    </p>
+                    <center>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <center>
+        <h4>TRADEMARK</h4>
+    </center>
+    <br>
+    <div class=" ANH ">
+        <img src="/assets/Image_Man/canon.jpg" alt="">
+        <img src="/assets/Image_Man/baba.jpg" alt="">
+        <img src="/assets/Image_Man/gap.jpg" alt="">
+        <img src="/assets/Image_Man/next.jpg" alt="">
+        <img src="/assets/Image_Man/puma.jpg" alt="">
+        <img src="/assets/Image_Man/zara.jpg" alt="">
+        <img src="/assets/Image_Man/canon.jpg" alt="">
+    </div>
+
+
+
+
+
+
+
+</div>

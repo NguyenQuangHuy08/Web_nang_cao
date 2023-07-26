@@ -1,0 +1,41 @@
+.image_woman{
+
+   width: 100%;
+     
+}
+.image_woman{
+  
+    height: 425px;
+
+
+}
+
+.col6-1{
+  
+    height: 200px;
+
+}
+
+.nav > .nav-item > .nav-link{
+
+   color: red;
+   font-size: 20px;
+   font-weight: bold;
+
+}
+
+.btn{
+  
+    border: -2px solid  blue;
+    background-color: white;
+    color: black;
+    font-size:15x;
+    font-weight: bold;
+    
+}
+
+del{
+  
+    margin-left: 10px;
+
+}

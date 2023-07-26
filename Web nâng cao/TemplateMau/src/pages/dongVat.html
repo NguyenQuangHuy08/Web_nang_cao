@@ -1,0 +1,28 @@
+<div class="container">
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+                <th scope="col">function</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="haha in danhSach">
+                <th scope="row">{{haha.ma}}</th>
+                <td>{{haha.ma}}</td>
+                <td>{{haha.cannang}}</td>
+                <td>{{haha.chieucao}}</td>
+                <td>
+
+                   <a href="#DONGVAT/detail/{{haha.id}}" ng-click = "detailDongVat($event,$index)">Detail</a>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

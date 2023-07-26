@@ -1,0 +1,97 @@
+<div class="container">
+   <br>
+   <h3 style="text-align: center;">HOME PAGES</h3>
+
+   <br>
+   <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">ID</label>
+      <div class="col-sm-10">
+         <input type="password" class="form-control" id="inputPassword">
+      </div>
+   </div>
+   <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+         <input type="text" class="form-control" id="inputName">
+      </div>
+   </div>
+   <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Price</label>
+      <div class="col-sm-10">
+         <input type="number" class="form-control" id="inputPrice">
+      </div>
+   </div>
+   <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Color</label>
+      <div class="rdo">
+         <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+               Pink
+            </label>
+         </div>
+         <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+               White
+            </label>
+         </div>
+         <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+               Black
+            </label>
+         </div>
+      </div>
+
+   </div>
+   <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Type</label>
+      <div class="col-md-3">
+         <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Đen</option>
+            <option>Trắng</option>
+            <option>Haha</option>
+
+         </select>
+      </div>
+   </div>
+
+   <div class="button">
+
+      <button>ADD</button>
+
+   </div>
+
+   <table class="table">
+      <thead>
+         <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Color</th>
+            <th scope="col">Type</th>
+            <th scope="col">Function</th>
+
+
+         </tr>
+
+      </thead>
+      <tbody>
+         <tr ng-repeat="list in danhSachSinhVien">
+            <th scope="row">{{list.id}}</th>
+            <td>{{list.name}}</td>
+            <td>{{list.price}}</td>
+            <td>{{list.coler}}</td>
+            <td>{{list.type}}</td>
+            <td>
+
+               <a href="#HOME/detail/{{list.id}}" ng-click = "detailStudent($event,$index)">Detail</a>
+               /
+               <a href="#HOME/remove/{{list.id}}" ng-click = "removeStudent($event,$index)">Remove</a>
+
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>

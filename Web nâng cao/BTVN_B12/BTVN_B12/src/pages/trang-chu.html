@@ -1,0 +1,29 @@
+<section class="section1">
+  <div class="container">
+    <center>
+      <h1>Trang Chủ</h1>
+    </center>
+    <br />
+    <div class="row">
+      <div
+        class="col-3"
+        ng-repeat="list in danhSachSinhVienHienThi"
+        style="margin-bottom: 50px"
+      >
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">{{list.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Tuổi: {{list.age}}</h6>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Giới tính: {{list.gender ? 'Nam' : 'Nữ'}}
+            </h6>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Địa chỉ: {{list.adress}}
+            </h6>
+            <h6 class="card-subtitle mb-2 text-muted">ID: {{list.id}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

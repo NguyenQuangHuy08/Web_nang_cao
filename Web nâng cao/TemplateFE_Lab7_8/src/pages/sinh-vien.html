@@ -1,0 +1,97 @@
+<div class="container">
+  <form>
+    <div class="row">
+      <div class="col-sm-4 offset-1">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Mã: </label>
+          <input type="text" class="form-control" ng-model="ma" required />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Tên: </label>
+          <input type="text" class="form-control" ng-model="ten" required />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Cân nặng: </label>
+          <input type="number" class="form-control" ng-model="canNang" required />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Loại</label> <br />
+          <select ng-model="loai" class="form-select" aria-label="Default select example">
+            <option value="loai1">Loai1</option>
+            <option value="loai2">Loai2</option>
+            <option value="loai3">Loai3</option>
+            <option value="loai4">Loai4</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-4 offset-1">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Giới tính: </label>
+          <span>Nam</span>
+          <input type="radio" ng-model="gioiTinh" name="gioiTinh" value="true" ng-checked="gioiTinh == true" />
+          <span>Nữ</span>
+          <input type="radio" ng-model="gioiTinh" name="gioiTinh" value="false" ng-checked="gioiTinh == false" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Chuyên nghành:
+          </label>
+          <select ng-model="chuyenNganh" class="form-select" aria-label="Default select example">
+            <option value="udpm">UDPM</option>
+            <option value="ptpm">PTPM</option>
+            <option value="ltw">Lập trình web</option>
+            <option value="ltmb">Lập trình mobile</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Sở thích: </label>
+          <br />
+          <span>Ăn</span>
+          <input type="checkbox" name="" id="checkbox1" ng-model="soThich.an" ng-true-value="'true'"
+            ng-false-value="'false'" />
+          <span>Lăn</span>
+          <input type="checkbox" name="" id="checkbox2" ng-model="soThich.lan" ng-true-value="'true'"
+            ng-false-value="'false'" />
+        </div>
+
+        <a href="#sinh-vien/add" type="submit" class="btn btn-primary" ng-click="them($event)">Submit</a>
+        <a href="#sinh-vien/{{maSV}}/edit" type="submit" class="btn btn-primary m-lg-5"
+          ng-click="sua($event, id)">Edit</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Mã</th>
+      <th scope="col">Tên</th>
+      <th scope="col">Cân nặng</th>
+      <th scope="col">Loại</th>
+      <th scope="col">Giới tính</th>
+      <th scope="col">Chuyên ngành</th>
+      <th scope="col">Sở thích</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in sinhViens">
+      <th scope="row">{{$index}}</th>
+      <td>{{item.maSV }}</td>
+      <td>{{item.ten}}</td>
+      <td>{{item.canNang}}</td>
+      <td>{{item.loai}}</td>
+      <td>{{item.gioiTinh == true ? "Nam": "Nữ"}}</td>
+      <td>{{item.chuyenNganh}}</td>
+      <td>
+        {{item.soThich.an == "true" ? "Ăn" : ""}} {{item.soThich.lan == "true" ?
+        "Lăn" : ""}}
+      </td>
+      <td>
+        <a href="#sinh-vien/{{item.maSV}}" ng-click="detail($event, item.id)">Detail</a>
+        <a href="#sinh-vien/{{item.maSV}}" ng-click="delete($event, item.id)">Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

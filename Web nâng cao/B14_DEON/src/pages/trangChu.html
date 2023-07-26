@@ -1,0 +1,20 @@
+<div class="container">
+    <h3 style="text-align: center;">TRANG CHỦ</h3>
+    <div class="row">
+        <div class="col-3" ng-repeat = "list in danhSach"  style="margin-bottom: 50px">
+            <div class="card" style="width: 18rem">
+                <div class="card-body">
+                    <h5 class="card-title">{{list.name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tuổi: {{list.age}}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        Giới tính: {{list.gender ? 'Nam' : 'Nữ'}}
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        Địa chỉ: {{list.address}}
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-muted">ID: {{list.id}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

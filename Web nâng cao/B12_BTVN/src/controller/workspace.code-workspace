@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\TemplateMau"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TemplateMau"
+	}
+}

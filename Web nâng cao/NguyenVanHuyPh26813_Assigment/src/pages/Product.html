@@ -1,0 +1,99 @@
+<br>
+<br>
+
+<img class="full" src="/assets/Slide_Show/Woman/slide2.jpg" alt="">
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-3" ng-repeat="haha in danhSachPages |limitTo: 4">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/New/{{haha.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" style="color: black;">{{haha.name}}</h5>
+                    </center>
+                    <p class="card-text">
+                    <div class="gia">
+                        <del>{{haha.price}}</del> {{haha.price}}
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+    </div>
+    <div>
+        <br>
+        <br>
+        <center>
+
+            <h4 style="color: black;">PRODUCT DETAIL</h4>
+
+        </center>
+        <br>
+        <br>
+        <div class="col-12">
+            <form>
+                ID :
+                <input class="form-control" type="text" aria-label="default input example"
+                    ng-model="pages.id" />
+                <br />
+                Name :
+                <input class="form-control" type="text" aria-label="default input example"
+                    ng-model="pages.name" />
+                <br />
+                Price :
+                <input class="form-control" type="text" aria-label="default input example"
+                    ng-model="pages.price" />
+                <br />
+                <br>
+                <br />
+                <br />
+                <!--  -->
+                <a href="#PRODUCT/add" class="btn btn-success col-1 m-3" ng-click="addSanPham($event);">
+                    Thêm
+                </a>
+                <button type="button" class="btn btn-warning">Update</button>
+            </form>
+        </div>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="haha in danhSachPages ">
+                    <th scope="row">{{haha.id}}</th>
+                    <td>{{haha.id}}</td>
+                    <td>{{haha.name}}</td>
+                    <td>{{haha.price}}</td>
+                    <td>
+
+                        <a href="#PRODUCT/detail/{{haha.id}}" ng-click = "detailSanPham($event,$index)">VIEW</a>
+                       /<a href="#PRODUCT/remove/{{haha.id}}" ng-click = "removeSanPham($event,$index)">REMOVE</a>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+
+</div>

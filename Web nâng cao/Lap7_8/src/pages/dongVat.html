@@ -1,0 +1,33 @@
+<div class="container">
+
+    <p>ID</p>
+    <input type="text">
+    <p>Mã</p>
+    <input type="text">
+    <p>Chiều cao</p>
+    <input type="text">
+    <p>Cân nặng</p>
+    <input type="text">
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">ma</th>
+                <th scope="col">chieucao</th>
+                <th scope="col">cannang</th>
+            </tr>
+        </thead>
+        <tbody  >
+            <tr ng-repeat ="haha in danhSach">
+                <td>{{haha.id}}</td>
+                <td>{{haha.ma}}</td>
+                <td>{{haha.chieucao}}</td>
+                <td>{{haha.cannang}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>

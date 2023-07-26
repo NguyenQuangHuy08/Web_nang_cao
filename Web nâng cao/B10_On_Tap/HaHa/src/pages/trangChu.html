@@ -1,0 +1,22 @@
+<div class="container">
+    <br>
+    <h3 style="text-align: center;">TRANG CHỦ</h3>
+    <br>
+    <div class="row">
+        <div class="col-3" ng-repeat="haha in listSinhVien ">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Name : {{haha.name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">ID : {{haha.id}}</h6>
+                    <p class="card-text">Age : {{haha.age}}</p>
+                    <p class="card-text">Gender : {{haha.gender ? 'Nam' : 'Nữ'}}</p>
+                    <p class="card-text">Adress : {{haha.adress }}</p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        
+    </div>
+    <br>
+</div>

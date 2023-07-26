@@ -1,0 +1,86 @@
+.Image {
+    position: fixed;
+    padding-top: 10px;
+
+}
+
+.HinhAnh{
+
+    position: fixed;
+    background-size: 100px;
+    padding-top: 20px;
+    padding-left: 1130px;
+ 
+}
+.menu {
+    position: fixed;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 300px;
+    padding-top: 20px;
+}
+
+.menu>li {
+    display: inline-block;
+
+}
+
+.menu>li>a {
+
+    display: block;
+    line-height: 40px;
+    padding:0 30px;
+    text-decoration: none;
+    position: relative;
+    color: black;
+    overflow: hidden;
+
+}
+
+
+.menu>li>a:hover {
+
+    color: black;
+
+}
+
+.menu ul {
+
+    width: 170px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    background-color: white;
+    font-variant: small-caps;
+    text-align: left;
+    border-radius: 3px;
+    box-shadow: 0 0 1px gray;
+    position: absolute;
+    display: none;
+
+}
+
+.menu>li:hover>ul {
+
+    display: block;
+
+}
+
+.menu ul>li>a {
+
+    display: block;
+    line-height: 30px;
+    color: greenyellow;
+    text-decoration: none;
+    padding: 0 5px;
+    border-bottom: 1px dotted lightgray;
+
+
+}
+
+.menu ul>li>a:hover {
+
+    color: black;
+    background-color: orangered;
+
+}

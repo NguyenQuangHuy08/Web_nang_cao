@@ -1,0 +1,29 @@
+
+<div class="container">
+<table class="table">
+ <br>
+  <h3 style="text-align: center;">SINH VIÊN PAGE</h3>
+  <br>
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Adress</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="sv in listSinhVien ">
+      <th scope="row">{{sv.id}}</th>
+      <td>{{sv.name}}</td>
+      <td>{{sv.age}}</td>
+      <td>{{sv.gender ? 'Nam' : 'Nữ'}}</td>
+      <td>{{sv.adress}}</td>
+    </tr>
+  </tbody>
+  <br>
+</table>
+
+</div>

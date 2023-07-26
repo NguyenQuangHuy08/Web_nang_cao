@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Big_Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Css/Body.css">
+    <link rel="stylesheet" href="Css/Article.css">
+    <link rel="stylesheet" href="Css/Header.css">
+
+</head>
+
+<body>
+    <!-- Phần section1 -->
+    <header>
+    <section>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg >
+            <div class=" container-fluid">
+                <!-- <a class="navbar-brand" href="#">Home</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Kitchen
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Personal Care
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Household
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Codes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+</header>
+    <!-- hết phần section1 -->
+    <!-- Bắt đầu section2 -->
+    <section>
+        <div class="image">
+            <img id="img" onclick="
+    changeImage()" src="Image/images 3" alt="">
+        </div>
+        <script>
+            var index = 1;
+            changeImage = function () {
+                var imgs = ["Image/images6.jfif", "Image/images.jfif", "Image/images 7.jfif", "Image/images 4"];
+                document.getElementById('img').src = imgs[index];
+                index++;
+                if (index == 4) {
+                    index = 0;
+                }
+            }
+            setInterval(changeImage, 1000)
+        </script>
+    </section>
+    <!-- kết thúc section2 -->
+    <!-- Bắt đầu section3  -->
+    <section>
+        <div class="container">
+            <h2>Special Offers</h2>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Staples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Snacks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fruits & Vegetables</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Breakfast & Cereal</a>
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/Anh_Bat_Com.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Moong</h5>
+                            <p class="card-text">
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/Anh_SonLine.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sunflower Oil</h5>
+                            <p class="card-text">
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/Anh_Banh.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Kabuli Chana</h5>
+                            <p class="card-text">
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/Anh_Bot_Nem.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Soya Chunks</h5>
+                            <p class="card-text">
+
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="Image/col4_1.jpg" alt="" class="col4_4">
+                </div>
+                <div class="col-4">
+                    <img src="Image/col4_2.jpg" alt="" class="col4_4">
+                </div>
+                <div class="col-4">
+                    <div class="col4">
+                        <img src="Image/col4_3.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="Image/col4_4.jpg" alt="" class="haha">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Kết thúc section3  -->
+    <!-- Bắt đầu section 4 -->
+    <section class="section4">
+        <img src="Image/col2_1.jpg" alt="">
+    </section>
+    <!-- kết thúc section 4 -->
+    <!-- Bắt đầu section5 -->
+    <section class="section5">
+        <div class="container">
+            <h2>Special Offers</h2>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/col3_1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Moisturiser</h5>
+                            <p class="card-text">
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="" class="can">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/col3_2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lady Finger</h5>
+                            <p class="card-text">
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="" class="can">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/col3_3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ribbon</h5>
+                            <p class="card-text">
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="" class="can">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/col3_4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Soya Chunks</h5>
+                            <p class="card-text">
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="" class="can">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/col3_5.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Clips</h5>
+                            <p class="card-text">
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="" class="can">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/col3_6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Conditioner</h5>
+                            <p class="card-text">
+
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="" class="can">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/col3_7.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cleaner</h5>
+                            <p class="card-text">
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="" class="can">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Image/col3_8.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gel</h5>
+                            <p class="card-text">
+                            <div class="gia">
+                                <del>$2,00</del> $1.50
+                                <img src="Image/star.svg" alt="" class="can">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                                <img src="Image/star.svg" alt="">
+                            </div>
+                            </p>
+                            <center>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- kết thúc section 5 -->
+    <!-- Bắt đầu section6 -->
+    <footer>
+    <section class="section6">
+        <div class="container">
+            <div class="tong">
+                <div class="footer1">
+                    <h6>About Us</h6>
+                    <br>
+                    <div>
+                        <p>Nam libero tempore, cum soluta nobis
+                            est eligendi optio cumque nihil impedit
+                            quo minus id quod maxime placeat
+                            facere possimus.</p>
+                    </div>
+                </div>
+                <div class="footer2">
+                    <h6>Menu</h6>
+                    <br>
+                    <div>
+                        <p><a href="#">Home</a></p>
+                        <p><a href="#">Kitchen</a></p>
+                        <p><a href="#">Peronal Care</a></p>
+                        <p><a href="#">Household</a></p>
+                        <p><a href="#">Short Coldes</a></p>
+                        <p><a href="#">Contact</a></p>
+                    </div>
+                </div>
+                <div class="footer3">
+                    <h6>Customer Services</h6>
+                    <br>
+                    <div>
+                        <p><a href="#">Shipping</a></p>
+                        <p><a href="#">Terms & Conditions</a></p>
+                        <p><a href="#">Faqs</a></p>
+                        <p><a href="#">Contact</a></p>
+                        <p><a href="#">Online shopping</a></p>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+</footer>
+
+    <!-- Kết thúc section6 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

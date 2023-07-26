@@ -1,0 +1,11 @@
+{
+  "sinhVien": [
+    {
+      "id": "3",
+      "name": "name 3",
+      "age": 85,
+      "gender": false,
+      "address": "address 3"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+h2 {
+
+    text-align: center;
+    margin-top: 30px;
+
+
+}
+
+.nav-link {
+
+    color: black;
+    font-size: 17px;
+
+}
+
+.nav-link .nav-item :hover {
+
+    border-bottom: 1px solid red;
+    background-color: red;
+
+}
+
+
+.row {
+
+    margin-top: 30px;
+
+}
+
+.card-img-top {
+
+    width: 50%;
+    margin-left: 70px;
+    margin-top: 20px;
+
+}
+
+.btn {
+
+    border-radius: 50px;
+    background-color: white;
+    color: green;
+}
+
+ul>li>a:hover {
+
+    border-bottom: 1px solid gray;
+
+
+}
+
+
+
+.col4 {
+
+    margin-bottom: 20px;
+
+
+}
+
+.col4>img {
+
+    width: 400px;
+    overflow: hidden;
+
+}
+
+.haha {
+    width: 400px;
+    overflow: hidden;
+    height: 169px;
+
+}
+
+.section4 {
+
+    margin-top: 20px;
+
+
+}
+
+.section4>img {
+
+    width: 100%;
+    height: 420px;
+
+}
+
+.can {
+
+    margin-left: 50px;
+
+
+}
+
+.section6 {
+
+    background-color: #353535;
+    min-height: 400px;
+    margin-top: 30px;
+
+
+}
+
+/* Chỉnh sửa css của phần chân  */
+
+h6,
+p {
+
+    color: wheat;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+
+
+.footer1 {
+    float: left;
+    padding-top: 50px;
+    width: 380px;
+    overflow: hidden;
+
+}
+
+.footer2 {
+    float: left;
+    overflow: hidden;
+    width: 300px;
+    padding-top: 50px;
+    margin-left: 170px;
+}
+
+
+.footer3 {
+    
+    overflow: hidden;
+    width: 320px;
+    margin-left: 940px;
+    padding-top: 50px;
+}
+
+
+
+

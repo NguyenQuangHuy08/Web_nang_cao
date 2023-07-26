@@ -1,0 +1,34 @@
+{
+  "listSinhVien": [
+    {
+      "maSV": "maSV2",
+      "ten": "name 2",
+      "cannang": 45,
+      "loai": "Loại 2",
+      "gioitinh": false,
+      "chuyennganh": "PTPM",
+      "sothich": "Lăn",
+      "id": "2"
+    },
+    {
+      "maSV": "maSV3",
+      "ten": "name 3",
+      "cannang": 45,
+      "loai": "Loại 3",
+      "gioitinh": true,
+      "chuyennganh": "Lập trình Web",
+      "sothich": "Lăn",
+      "id": "3"
+    },
+    {
+      "maSV": "maSV4",
+      "ten": "name 4",
+      "cannang": 45,
+      "loai": "Loại 4",
+      "gioitinh": false,
+      "chuyennganh": "Lập trình Mobile",
+      "sothich": "Ăn",
+      "id": "4"
+    }
+  ]
+}

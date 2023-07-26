@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <link rel="stylesheet" href="Css/Css.css">
+</head>
+
+<body>
+
+    <body ng-app="bai3" ng-controller="myController">
+        <div class="container">
+            <h1 style="text-align: center;">THÔNG TIN CÁ NHÂN SINH VIÊN</h1>
+            <br>
+            <br>
+            <div class="khung">
+                <table border="1" cellspacing="0">
+                    <tr>
+                        <th>Họ tên</th>
+                        <th>Giới tính</th>
+                        <th>Ngày sinh</th>
+                        <th>Điểm</th>
+                    </tr>
+                    <tr>
+                        <td>{{sinhVien.hoTen}}</td>
+                        <td>{{sinhVien.gioiTinh}}</td>
+                        <td>{{sinhVien.ngaySinh}}</td>
+                        <td>{{sinhVien.diem}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="./lib/angular.min.js"></script>
+        <script src="Js/Js.js"></script>
+
+    </body>
+
+</html>

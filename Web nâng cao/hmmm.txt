@@ -1,0 +1,5 @@
+    		Cách sử dụng trang web Bootstrap
+
+1: Carousel : Slide show
+2: Bagde    : Hiệu ứng mess
+3: Containers : là các rol

@@ -1,0 +1,219 @@
+body{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.container{
+
+   max-width: 1200px;
+   margin: 0px auto;
+
+
+}
+
+
+
+header{
+
+    background-color: #FF4500;
+    position: relative;
+    height: 150px;
+  
+
+}
+
+header >img{
+
+   position: absolute;
+   top: 30px;
+   left: 20px;
+   width: 250px;
+
+
+}
+
+
+.thuoctinh{
+
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    
+
+}
+
+input{
+
+   width: 250px;
+   height: 25px;
+   margin: 20px;
+
+
+}
+
+button{
+   
+    background-color: #26324F;
+    color: white;
+    height: 30px;
+    width: 120px;
+
+
+}
+
+
+nav{
+
+    
+    background-color: #FFB760;
+    height: 60px;
+
+
+}
+
+
+nav>ul{
+   
+   
+   padding: 0px;
+   margin: 0px;
+   text-align: center;
+
+}
+
+nav>ul>li{
+
+   display: inline-block;
+   
+
+}
+
+
+
+nav>ul>li>a{
+
+   display: block;
+   margin: 15px;
+   text-decoration: none;
+   font-weight: bold;
+   color: black;
+   text-transform: uppercase;
+
+}
+
+
+
+nav  ul li:hover {
+
+ 
+    text-decoration: none;
+    background-color: red;
+    border-bottom: 1px solid black;
+
+ }
+
+
+.banner{
+
+    background-image: url(image/banner.jpg);
+    background-repeat: no-repeat;
+   background-size: 100%;
+    height: 400px;
+    margin-top: 7px;
+    
+
+
+}
+
+.one{
+
+    border: 1px solid gray;
+    width: 25%;
+    float: left;
+    height: 444px;
+
+}
+
+.one img {
+
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.one h2{
+
+
+   margin: 25px;
+   margin-top: 5px;
+
+}
+
+.one p{
+
+   margin: 25px;
+
+}
+
+
+.tren{
+
+    border: 1px solid gray;
+    float: right;
+    width: 72%;
+   
+
+}
+
+.tren > img{
+
+   margin-top: 23px;
+   margin-left: 15px;
+   float: left;
+   margin-bottom: 20px;
+
+}
+
+.khung{
+   
+    float: right;
+    width: 560px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+   
+}
+
+
+.duoi{
+
+   border: 1px solid gray;
+   float: right;
+   width: 72%;
+   margin-top: 10px;
+   
+
+}
+
+.duoi > img{
+
+  margin-top: 23px;
+  margin-left: 15px;
+  float: left;
+  margin-bottom: 20px;
+  
+
+}
+
+.footer{
+   
+   clear: both;
+   background-color: #26324F;
+   text-align: center;
+   color: white;
+   padding-top: 6px;
+   height: 50px;
+   padding-bottom: 6px;
+   margin-top: 500px;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assigment</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Link của Nav -->
+  <link rel="stylesheet" href="/css/Config/header.css">
+  <link rel="stylesheet" href="/css/Config/footer.css">
+  <link rel="stylesheet" href="/css/Config/man.css">
+  <link rel="stylesheet" href="/css/Config/woman.css">
+  <link rel="stylesheet" href="/css/Config/new.css">
+  <link rel="stylesheet" href="/css/Config/pages.css">
+  <link rel="stylesheet" href="/css/Config/information.css">
+  <link rel="stylesheet" href="/css/Config/blogs.css">
+  <link rel="stylesheet" href="/css/Config/shop.css">
+  <link rel="stylesheet" href="/css/Config/product.css">
+
+</head>
+
+<body ng-app="huyNguyen">
+  <!--Header-->
+
+  <header>
+
+    <hr>
+
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+          <img class="banner" src="/assets/banner/shop-logo-red.png" alt="">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#MAN">MAN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#WOMAN">WOMAN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#NEW">NEW</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#PAGES">PAGES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#INFORMATION">INFORMATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#BLOGS">BLOGS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#SHOP">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#PRODUCT">PRODUCT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#PAY">PAY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#LOCATION">LOCATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#KIDS">KIDS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#STYLE">STYLE</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#ADMIN_THEME">ADMIN THEME</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!--phần thân-->
+  <section ng-view="">
+
+
+  </section>
+  <!--Footer-->
+
+
+  <br>
+  <footer>
+
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-3">
+          <h5>ABOUT US</h5>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam sit nonummy nibh euismod tincidunt ut
+            laoreet dolore magna aliquarm erat sit volutpat. Nostrud exerci tation ullamcorper suscipit lobortis nisl
+            aliquip commodo consequat.</p>
+        </div>
+        <div class="col-3">
+          <h5>INFORMATION</h5>
+          <p>> <a href="#">HAHA</a></p>
+          <p>> <a href="#">HAHA</a></p>
+          <p>> <a href="#">HAHA</a></p>
+        </div>
+        <div class="col-3">
+          <h5>ADDRESS</h5>
+          <p> Who We Are</p>
+          <P> Testimonials</P>
+          <p> Our Services</p>
+          <p> Contact</p>
+          <P> Innovation</P>
+        </div>
+        <div class="col-3">
+          <h5>Join Our Newsletter Now</h5>
+          <p>Get E-mail updates about our latest shop and special offers.</p>
+          <input type="text">
+          <button>Tìm kiếm</button>
+          <div class="icon">
+
+            <a href="">
+              <img src="/assets/Icon/chat.svg" alt="">
+            </a>
+            <a href="">
+              <img src="/assets/Icon/facebook.svg" alt="">
+            </a>
+            <a href="">
+              <img src="/assets/Icon/instagram.svg" alt="">
+            </a> <a href="">
+              <img src="/assets/Icon/telegram.svg" alt="">
+            </a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+  <script src="/lib/angular.js"></script>
+  <script src="/lib/angular-route.js"></script>
+
+  <script src="/src/config/api.js"></script>
+  <!-- Controller của man -->
+  <script src="./controller/manController.js"></script>
+  <!-- Controller của woman -->
+  <script src="./controller/womanController.js"></script>
+  <!-- Controller của New -->
+  <script src="controller/newController.js"></script>
+  <!-- Controller của pages -->
+  <script src="controller/pagesController.js"></script>
+  <!-- Controller của information -->
+  <script src="controller/informationController.js"></script>
+  <!-- Controller của blogs -->
+  <script src="controller/blogsController.js"></script>
+  <!-- Controller của shop -->
+  <script src="controller/shopController.js"></script>
+
+
+  <script src="route.js"></script>
+
+</body>
+
+</html>

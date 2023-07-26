@@ -1,0 +1,68 @@
+<section class="section2">
+  <div class="container">
+    <center>
+      <h1>Sinh Viên</h1>
+    </center>
+    <br />
+    <div class="row">
+      <div class="col-12">
+        <form>
+          ID :
+          <input class="form-control" type="text" aria-label="default input example" ng-model="form_sinhVien.id" />
+          <br />
+          Name :
+          <input class="form-control" type="text" aria-label="default input example" ng-model="form_sinhVien.name" />
+          <br />
+          Age :
+          <input class="form-control" type="text" aria-label="default input example" ng-model="form_sinhVien.age" />
+          <br />
+          Address :
+          <input class="form-control" type="text" aria-label="default input example" ng-model="form_sinhVien.address" />
+          <br />
+          Gender :
+          <input type="radio" style="margin-left: 100px" name="gender" value="true" ng-model="form_sinhVien.gender"
+            ng-checked="form_sinhVien.gender == true" ng-click="check()" />
+          Nam
+          <input type="radio" name="gender" style="margin-left: 100px" value="false" ng-model="form_sinhVien.gender"
+            ng-checked="form_sinhVien.gender == false" ng-click="check()" />
+          Nữ
+          <br />
+          <br />
+          <a href="#sinh-vien/add" class="btn btn-success col-1 m-3" ng-click="addStudent($event);">
+            Thêm
+          </a>
+          <button type="button" class="btn btn-warning">Update</button>
+        </form>
+      </div>
+      <div class="col-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">STT</th>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Address</th>
+              <th scope="col">Function</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="list in danhSachSinhVienHienThi">
+              <th scope="row">{{$index+1}}</th>
+              <td>{{list.id}}</td>
+              <td>{{list.name}}</td>
+              <td>{{list.age}}</td>
+              <td>{{list.gender ? 'Nam' : 'Nữ'}}</td>
+              <td>{{list.address}}</td>
+              <td>
+                <a href="#sinh-vien/detail/{{list.id}}" ng-click="detailStudent($event,$index)">Detail</a>
+                <a href="#sinh-vien/remove/{{list.id}}" ng-click="removeStudent($event,$index)">Remove</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

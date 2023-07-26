@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đề ôn tập buổi 10</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+ 
+</head>
+
+<body ng-app="huyNguyen">
+
+
+<!-- 
+
+  1.Khái niệm về scope
+
+ -  là một biến (serice ) dùng để trao đổi giữa controller và view
+ -  phạm vi hoạt động của $scope giá trị tồn tại khi trong controller
+
+ ==> Ngoài controller không lấy được giá trị của biến
+ ==> $scope (Biến cục bộ) chính là biến của controller
+
+  2.RootScope
+      - Biến toàn cục (session  cookies , localStorge)
+      - Phạm vi hoạt động: Mọi nơi trong project nhưng phải chung ng-app
+  ==> RootScope là biến của ng-app 
+
+-->
+
+  <div ng-controller = "myController"> 
+
+    {{message}}{{message}}
+    {{thongBao}}{{thongBao}}
+
+
+  </div>
+
+ <p>Ngoài controller</p>
+ 
+ {{message}}{{message}}
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+  <script src="../lib/angular.js"></script>
+  <!-- <script src="../lib/angular-route.js"></script> -->
+
+  <script src="./router.js"></script>
+</body>
+
+</html>

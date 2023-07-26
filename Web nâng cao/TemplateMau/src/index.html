@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bài tập về nhà buổi 12</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body ng-app="huyNguyen">
+
+
+  <header>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#HOME">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#DONGVAT">ĐỘNG VẬT</a>
+      </li>
+    </ul>
+
+
+  </header>
+
+
+  <section ng-view>
+
+
+  </section>
+
+  <footer>
+    <div class="container">
+
+      <center>
+        <h1>Anh yêu em</h1>
+      </center>
+
+    </div>
+
+
+  </footer>
+
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+  <script src="/lib/angular.js"></script>
+  <script src="/lib/angular-route.js"></script>
+
+  <script src="/src/config/api.js"></script>
+  <script src="/src/controller/dongVatController.js"></script>
+
+  <script src="route.js"></script>
+
+</body>
+
+</html>

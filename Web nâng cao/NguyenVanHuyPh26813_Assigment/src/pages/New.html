@@ -1,0 +1,75 @@
+<br>
+<br>
+<div class="container">
+
+    <div class="row">
+        <div class="col-3" ng-repeat="haha in danhSachNew |limitTo: 4">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/New/{{haha.image}}" class="card-img-top" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<!-- SLide show -->
+
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/assets/Slide_Show/Woman/slide1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/assets/Slide_Show/Woman/slide2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/assets/Slide_Show/Woman/slide3.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container">
+    <br>
+    <br>
+    <center>
+        <h5 style="color: black; font-weight: bold; font-size: 25px;">DANH SÁCH SẢN PHẨM MỚI </h5>
+    </center>
+    <br>
+    <div class="row">
+        <div class="col-3" ng-repeat="haha in danhSachNew |limitTo: 8">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/New/{{haha.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" style="color: black;">{{haha.name}}</h5>
+                    </center>
+                    <p class="card-text">
+                    <div class="gia">
+                        <del>{{haha.price}}</del> {{haha.price}}
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+    </div>
+    <br>
+
+
+
+</div>

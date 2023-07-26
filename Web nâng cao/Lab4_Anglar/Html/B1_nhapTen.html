@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="Css/Css.css">
+</head>
+
+<body ng-app="bai1" ng-controller="myController">
+    <div class="container">
+        <h4>BẠN HÃY NHẬP TÊN CỦA MÌNH</h4>
+        <div class="chua">
+            <input type="text" ng-model="name" />
+            <button class="nut" ng-click="in();">In thông tin</button>
+            <marquee>
+                <h2>Tên của bạn là : {{message}}</h2>
+            </marquee>
+        </div>
+    </div>
+    <script src="./lib/angular.min.js"></script>
+    <script src="./Js/Js.js"></script>
+</body>
+
+</html>

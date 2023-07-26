@@ -1,0 +1,80 @@
+{
+  "students": [
+    {
+      "ten": "ten 2",
+      "canNang": 11,
+      "loai": "loai1",
+      "gioiTinh": true,
+      "chuyenNganh": "udpm",
+      "soThich": {
+        "an": "false",
+        "lan": "true"
+      },
+      "id": "1"
+    },
+    {
+      "maSV": "maSV 2",
+      "ten": "ten 2",
+      "canNang": 55,
+      "loai": "loai2",
+      "gioiTinh": false,
+      "chuyenNganh": "ptpm",
+      "soThich": {
+        "an": "true",
+        "lan": "true"
+      },
+      "id": "2"
+    },
+    {
+      "maSV": "maSV 3",
+      "ten": "ten 3",
+      "canNang": 18,
+      "loai": "loai3",
+      "gioiTinh": true,
+      "chuyenNganh": "ltw",
+      "soThich": {
+        "an": "true",
+        "lan": "true"
+      },
+      "id": "3"
+    },
+    {
+      "maSV": "maSV 4",
+      "ten": "ten 4",
+      "canNang": 88,
+      "loai": "loai4",
+      "gioiTinh": false,
+      "chuyenNganh": "ltmb",
+      "soThich": {
+        "an": "true",
+        "lan": "true"
+      },
+      "id": "4"
+    },
+    {
+      "maSV": "maSV 5",
+      "ten": "a",
+      "canNang": 1,
+      "loai": "loai2",
+      "gioiTinh": "false",
+      "chuyenNganh": "ptpm",
+      "soThich": {
+        "an": "true",
+        "lan": "true"
+      },
+      "id": "ndDug4p"
+    },
+    {
+      "ten": "hai",
+      "canNang": 50,
+      "loai": "loai4",
+      "gioiTinh": true,
+      "chuyenNganh": "udpm",
+      "soThich": {
+        "an": "true",
+        "lan": "true"
+      },
+      "id": "OiiWOV4"
+    }
+  ]
+}

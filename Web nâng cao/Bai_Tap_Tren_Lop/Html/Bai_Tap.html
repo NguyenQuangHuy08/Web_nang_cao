@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập trên lớp </title>
+    <link rel="stylesheet" href="Css/Css.css">
+</head>
+
+<body ng-app="huyNguyen" ng-controller="myController">
+    <div class="container">
+        <div class="bai1">
+            <h3>Bài 1</h3>
+            <p>Số thứ 1 <input type="number" ng-model="so1"></p>
+            <p>Số thứ 2 <input type="number" ng-model="so2"></p>
+            <button ng-click="cong()">+</button>
+            <button ng-click="tru()">-</button>
+            <button ng-click="nhan()">*</button>
+            <button ng-click="chia()">/</button>
+            <h3>Kết quả : {{message}}</h3>
+            <h5></h5>
+        </div>
+        <br>
+         
+        <div class="bai2">
+            <h3>Bài 2</h3>
+            <p>Nhập tên của bạn <input type="text" name="" id="" ng-model="name"><button ng-click="in()">In thông
+                    báo</button></p>
+            <h5>Xin chào: {{message1}}</h5>
+        </div>
+  
+        <br>
+        <div class="bai3">
+            <h3>Bài 3</h3>
+
+            <h4>Thông tin của học sinh !</h4>
+
+            <table border="1" cellspacing="0">
+
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Tuổi</th>
+                    <th>Địa chỉ</th>
+                    <th>Ngành học</th>
+                </tr>
+                <tr>
+                    <td>{{hocSinh.name}}</td>
+                    <td>{{hocSinh.tuoi}}</td>
+                    <td>{{hocSinh.diaChi}}</td>
+                    <td>{{hocSinh.nganhHoc}}</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+               
+        <div class="bai4">
+            <h3>Bài 4</h3>
+            <h4>Thông tin sinh viên</h4>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Giới tính</th>
+                    <th>Ngày tháng năm sinh</th>
+                    <th>Điểm</th>
+                </tr>
+                <tr>
+                    <td>{{sinhVien.name}}</td>
+                    <td>{{sinhVien.gioiTinh}}</td>
+                    <td>{{sinhVien.ngaySinh}}</td>
+                    <td>{{sinhVien.diem}}</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        
+        <div class="bai5">
+            <h3>Bài 5</h3>
+            <h4>Mảng thông tin sinh viên</h4>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <th>Họ và tên</th>
+                    <th>Ngày sinh</th>
+                    <th>Giới tính</th>
+                    <th>Điểm</th>
+                </tr>
+                <tr ng-repeat="item in mangSinhVien">
+                    <td>{{item.name}}</td>
+                    <td>{{item.ngaySinh}}</td>
+                    <td>{{item.gioiTinh}}</td>
+                    <td>{{item.diem}}</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="bai6">
+            <h3>Bài 6</h3>
+            <h4>Chu vi và diện tích hình chữ nhật</h4>
+            <p>Chiều dài</p>
+            <input type="number" ng-model="chieuDai">
+            <p>Chiều rộng</p>
+            <input type="number" ng-model="chieuRong">
+            <p>Chu vi</p>
+            <input type="number"" ng-model = "chuVi" >
+            <p>Diện tích</p>
+            <input type="number" ng-model = "dienTich">
+            <div class="button">
+                <button ng-click="chuVi_dienTich()">Kết quả</button>
+            </div>
+        </div> 
+    </div>
+
+    <script src="./lib/angular.min.js"></script>
+    <script src="./Js/Js.js"></script>
+
+</body>
+
+</html>

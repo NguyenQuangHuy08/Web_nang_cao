@@ -1,0 +1,106 @@
+<div class="container">
+
+    <br>
+    <br>
+    <div class=" ANH ">
+        <img src="/assets/Image_Man/canon.jpg" alt="">
+        <img src="/assets/Image_Man/baba.jpg" alt="">
+        <img src="/assets/Image_Man/gap.jpg" alt="">
+        <img src="/assets/Image_Man/next.jpg" alt="">
+        <img src="/assets/Image_Man/puma.jpg" alt="">
+        <img src="/assets/Image_Man/zara.jpg" alt="">
+        <img src="/assets/Image_Man/canon.jpg" alt="">
+    </div>
+    <br>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">SHOP</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">DETAIL</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+
+    <br>
+
+
+
+</div>
+
+<img class="rong" src="/assets/Slide_Show/Woman/slide2.jpg" alt="">
+
+<div class="container">
+ <br>
+ <br>
+   <center>
+       <h4 style="color: black; font-size: 40px;">PRODUCT</h4>
+   </center>
+   <br>
+    <div class="row">
+        <div class="col-3" ng-repeat="haha in danhSachShop |limitTo: 4">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/Shop/{{haha.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title" style="color: black;">{{haha.name}}</h5>
+                    </center>
+                    <p class="card-text">
+                    <div class="gia">
+                        <del>{{haha.price}}</del> {{haha.price}}
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-3" ng-repeat="haha in danhSachShop |limitTo: 4">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/Shop/{{haha.image}}" class="card-img-top" alt="...">
+                <!-- <div class="card-body">
+                    <center>
+                        <h5 class="card-title" style="color: black;">{{haha.name}}</h5>
+                    </center>
+                    <p class="card-text">
+                    <div class="gia">
+                        <del>{{haha.price}}</del> {{haha.price}}
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                        <img src="/assets/Icon/star.svg" alt="">
+                    </div>
+                    </p>
+                </div> -->
+            </div>
+            <br>
+        </div>
+        <br>
+    </div>
+    <br>
+    <center>
+        <button class="xemthem"><a href="#NEW"> Xem thêm</a></button>
+    </center>
+
+
+
+
+
+
+</div>

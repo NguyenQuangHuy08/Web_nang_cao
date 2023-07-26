@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="PhongModule">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BTVN B9</title>
+    <!-- Phần bootstrap -->
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <nav class="menu">
+              <ul>
+                <li><a href="#trang-chu">Trang Chủ</a></li>
+                <li><a href="#sinh-vien">Sinh Viên</a></li>
+                <li><a href="#gioi-thieu">Giới thiệu</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Section-->
+    <main ng-view></main>
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <h5 style="text-align: center">Phong DGPH26821</h5>
+        </div>
+      </div>
+    </footer>
+    <!-- Boostrap-->
+    <script src="../css/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+    <!--------AngularJS-->
+    <script src="../lib/angular.js"></script>
+    <script src="../lib/angular-route.js"></script>
+    <script src="./controller/sinh-vien-controller.js"></script>
+    <script src="config/api.js"></script>
+    <script src="./router.js"></script>
+    <!--------Controller-->
+
+  </body>
+</html>

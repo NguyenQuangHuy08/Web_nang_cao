@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bài tập về nhà buổi 12</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body ng-app="huyNguyen">
+  <!--Header-->
+  <header>
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#TRANG_CHU">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#SINH_VIEN">SINH VIÊN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#GIỚI_THIỆU">GIỚI THIỆU</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--phần thân-->
+  <section ng-view="">
+
+
+  </section>
+  <!--Footer-->
+  <footer>
+    <div class="container">
+      <h4 style="text-align: center;">FPT Polytechnic -PTPM</h4>
+    </div>
+    </div>
+  </footer>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+  <script src="/lib/angular.js"></script>
+  <script src="/lib/angular-route.js"></script>
+
+  <script src="/src/config/api.js"></script>
+  <script src="./controller/sinhVienController.js"></script>
+  <!-- <script src="./controller/nhap.js"></script> -->
+
+  <script src="route.js"></script>
+
+</body>
+
+</html>
